@@ -13,7 +13,14 @@ class Customer extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('customer', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('email');
+            $table->string('phone');
+            $table->timestamps();
+        });
     }
 
     /**
