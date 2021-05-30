@@ -24,6 +24,14 @@
     {{ $slot }}
 
     @livewireScripts
+
+    <script>
+        window.livewire.on('customerAdded', () => {
+            $('#customerCreateModal').modal('hide');
+        })
+
+    </script>
+
 </body>
 
 </html>
