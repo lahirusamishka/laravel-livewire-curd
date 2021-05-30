@@ -9,7 +9,17 @@
 
 ## UI
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="resources/image/Screenshot from 2021-05-30 12-29-34.png" ></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="resources/image/x.png" ></a></p>
+
+## Create Customer
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="resources/image/1.png" ></a></p>
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="resources/image/2.png" ></a></p>
+
+## Update Customer
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="resources/image/3.png" ></a></p>
 
 ## About Laravel
 

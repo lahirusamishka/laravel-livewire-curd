@@ -14,8 +14,12 @@
                     <div class="card-header">
                         <h3>
                             All Customers
-                            <button type="button" class="btn btn-success" data-toggle="modal"
-                                data-target="#customerCreateModal">New</button>
+                            {{-- <button type="button" class="btn btn-success" >New</button> --}}
+                            <button  data-toggle="modal" data-target="#customerCreateModal"
+                                class="py-2 px-4 font-semibold rounded-sm shadow-md text-white bg-green-500 hover:bg-green-900">
+                                New
+                            </button>
+
                         </h3>
                     </div>
                     <div class="card-body">
@@ -37,12 +41,24 @@
                                         <th>{{ $customer->email }}</th>
                                         <th>{{ $customer->phone }}</th>
                                         <th>
-                                            <button type="button" class="btn btn-info" data-toggle="modal"
-                                                data-target="#customerUpdateModal"
-                                                wire:click.prevent="edit({{ $customer->id }})">edit</button>
-                                            <button type="button" class="btn btn-danger"
-                                                wire:click.prevent="delete({{ $customer->id }})">delete</button>
+                                         
+                                         
+
+                                                <button
+                                                data-toggle="modal" data-target="#customerUpdateModal"
+                                                wire:click.prevent="edit({{ $customer->id }})"
+                                                    class="bg-purple-500 text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                    type="button">
+                                                    Edit
+                                                </button>
+                                            <button 
+                                            wire:click.prevent="delete({{ $customer->id }})"
+                                                class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                type="button">
+                                                Delete
+                                            </button>
                                         </th>
+
 
                                     </tr>
                                 @endforeach
