@@ -29,6 +29,9 @@
         window.livewire.on('customerAdded', () => {
             $('#customerCreateModal').modal('hide');
         })
+        window.livewire.on('customerUpdated', () => {
+            $('#customerUpdateModal').modal('hide');
+        })
 
     </script>
 
